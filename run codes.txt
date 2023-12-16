@@ -1,0 +1,8 @@
+seq
+!nvc++ -o seq sequential_code.cpp && ./seq
+
+openacc
+!nvc++ -fast -ta=multicore -o acc3 acc.cpp && ./acc3
+
+cuda
+!nvc++ -o cuda cuda.cu && ./cuda
