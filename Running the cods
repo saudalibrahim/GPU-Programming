@@ -1,0 +1,14 @@
+Running the Codes 
+this code can be run locally or using cloud gpu provider like nvidia  
+
+seq
+!nvc++ -o seq sequential_code.cpp && ./seq
+
+openacc
+!nvc++ -fast -ta=multicore -o acc acc.cpp && ./acc
+
+Python
+can be run direcly in jupiter note 
+
+cuda
+!nvc++ -o cuda cuda.cu && ./cuda
